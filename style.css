@@ -280,6 +280,7 @@ section{
     border-radius: 50%;
     left:109%;
     top:55%;
+    z-index: 2;
 }
 .my-experience:nth-child(2n)::before,.my-education:nth-child(2n):before{
     content: " ";
@@ -349,41 +350,9 @@ section{
     color:#2857A4;
     z-index: 3;
 }
-.timeline-circle{
-    
-    position: absolute;
-    width:13px;
-    height: 13px;
-    border-radius: 50%;
-    background-color: lightgrey;
-    left:49.3%;
-}
 
-section:nth-child(2n) .timeline-circle{
-    background-color: grey;
-    
-    
-}
 
-.timeline1{
-    top:15%;
-}
-.timeline2{    
-    top:35%;
-}
-.timeline3{
-    top:63%;
-}
-.timeline4{
-    top:85%;
-}
 
-.all-education .timeline2{
-    top:45%;
-}
-.all-education .timeline3{
-    top:80%;
-}
 
 @media screen and (max-width:750px) {
     .all-experience,.all-education{
@@ -410,11 +379,18 @@ section:nth-child(2n) .timeline-circle{
         left:10%;
     }
     
-    .timeline-circle{
-        left:9.2%;
-        width:13px;
-        height: 13px;
+    .my-experience::before,.my-education::before{
+       
+        left:-12.7%;
+        top:55%;
     }
+
+    .my-experience:nth-child(2n)::before,.my-education:nth-child(2n):before{
+       
+        left:-12.7%;
+        top:55%;
+    }
+   
 }
 /* portfolio section */
 
@@ -510,7 +486,7 @@ button[type=submit]{
         width:80%;
     }
     .my-detail{
-        margin:30px 2%;
+        margin:30px 5%;
     }
     .my-contact{
         justify-content: flex-start;
