@@ -123,6 +123,8 @@ nav .menu-bar i{
     letter-spacing: 1px;
     font-weight: 900;
     font-size: 1.5rem;
+    animation-name:bounceInDown;
+    animation-duration: 1s;
 }
 
 .social-icons{
