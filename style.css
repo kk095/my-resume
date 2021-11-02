@@ -22,14 +22,28 @@ header{
 
 nav{
     width:100%;
-    height:auto;
-    padding-top: 15px;
+    height:50px;
     font-weight: 100;
     font-size: .9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top:0;
+    color: black;
+    background: rgb(255, 255, 255,.5);
+    z-index: 1000;
 }
 nav .horizontal-list{
     text-align: center;
 }
+nav .horizontal-list a{
+    color: black;
+}
+nav .vertical-list  a{
+    color: black;
+}
+
 .horizontal-list li{
     display:inline-block;
     margin:0px 5px;
@@ -58,7 +72,7 @@ nav .menu-bar{
 
 .menu{
     position: absolute;
-    background-color: gray;
+    background-color: white;
     box-shadow: -4px 4px 6px 1px black;
     right:1%;
     top:10%;
@@ -71,7 +85,7 @@ nav .menu-bar{
     font-weight: 800;
 }
 nav .menu-bar i{
-    color: white;
+    color: black;
 }
 #menu:target{
     display: block;
@@ -80,9 +94,9 @@ nav .menu-bar i{
     display:none;
 }
 #x{
-    color:white;
+    color:black;
     text-decoration: none;
-    border: 2px solid white;
+    border: 2px solid black;
     padding: 3px;
     margin-left: 80%;
 }

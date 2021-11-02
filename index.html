@@ -11,33 +11,33 @@
     <title>Resume</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="horizontal-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skill">Skill</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="menu-bar" id="menu-bar">
-               <a href="#menu"><i class="fas fa-bars"></i></a>
-            </div>
-            <div id="menu" class="menu">
-                <a href="#menu-bar" id="x">X</a>
-                <ul  class="vertical-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skill">Skill</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            </div>
-        </nav>
+    <nav>
+        <ul class="horizontal-list">
+            <li><a data-val="#home" href="#home">Home</a></li>
+            <li><a data-val="#about" href="#about"  >About</a></li>
+            <li><a data-val="#skill" href="#skill" >Skill</a></li>
+            <li><a data-val="#experience" href="#experience" >Experience</a></li>
+            <li><a data-val="#education" href="#education"  >Education</a></li>
+            <li><a data-val="#portfolio" href="#portfolio" >Portfolio</a></li>
+            <li><a data-val="#contact" href="#contact" >Contact</a></li>
+        </ul>
+        <div class="menu-bar" id="menu-bar">
+           <a id="bar-icon" href="#menu"><i class="fas fa-bars"></i></a>
+        </div>
+        <div id="menu" class="menu">
+            <a  href="#menu-bar" id="x">X</a>
+            <ul  class="vertical-list">
+            <li><a data-val="#home" href="#home">Home</a></li>
+            <li><a data-val="#about" href="#about">About</a></li>
+            <li><a data-val="#skill" href="#skill">Skill</a></li>
+            <li><a data-val="#experience" href="#experience">Experience</a></li>
+            <li><a data-val="#education" href="#education">Education</a></li>
+            <li><a data-val="#portfolio" href="#portfolio">Portfolio</a></li>
+            <li><a data-val="#contact" href="#contact">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+    <header id="home">
         <div class="my-name">
             <h1 class=" ">Krishan Kant Sharma</h1>
             <ul class="horizontal-list social-icons">
@@ -70,28 +70,28 @@
             </div>
             <div class="skills-name">
                 <div class="my-skill">
-                    <div class="percent eighty-percent">C</div>
+                    <div data-per="80" class="percent eighty-percent">C</div>
                 </div>
                 <div class="my-skill">
-                    <div class="percent seventy-percent">C++</div>
+                    <div data-per="70" class="percent seventy-percent">C++</div>
                 </div>
                 <div class="my-skill">
-                    <div class="percent ninty-percent">HTML</div>
+                    <div data-per="90" class="percent ninty-percent">HTML</div>
                 </div>
                 <div class="my-skill">
-                    <div class="percent eighty-percent">CSS</div>
+                    <div data-per="80" class="percent eighty-percent">CSS</div>
                 </div>
                 <div class="my-skill">
-                    <div class="percent sixty-percent">Javasript</div>
+                    <div data-per="60" class="percent sixty-percent">Javasript</div>
                 </div>
                 <div class="my-skill">
-                    <div class="percent eighty-percent">Python</div>
+                    <div data-per="80" class="percent eighty-percent">Python</div>
                 </div>
                 <div class="my-skill">
-                    <div class="percent seventy-percent ">django</div>
+                    <div data-per="70" class="percent seventy-percent ">django</div>
                 </div>
                 <div class="my-skill">
-                    <div class="percent fifty-percent">React</div>
+                    <div data-per="50" class="percent fifty-percent">React</div>
                 </div>
             </div>
         </section>
@@ -291,5 +291,7 @@
             </div>
         </section>
     </main>
+
+    <script src="resume.js"></script>
 </body>
 </html>
